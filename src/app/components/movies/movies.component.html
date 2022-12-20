@@ -1,0 +1,15 @@
+<div class="container">
+    <!-- <app-search></app-search>
+    <hr>
+    <app-ng-rx></app-ng-rx>
+    <hr> -->
+    <app-movie-form (submitForm)="addNewMovie($event)"></app-movie-form>
+    <hr>
+    <app-movie-item *ngFor="let movie of movies" [item]="movie" (clickEvent)="alert(movie)"></app-movie-item>
+</div>
+
+
+
+<!-- <h2>{{obj|json|uppercase}}</h2>
+<h4>{{003.3244|number:"1.2-3"}}</h4>
+<h4 *ngIf="true">{{100|USD2INR:75:2:3}}</h4> -->

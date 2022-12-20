@@ -1,0 +1,9 @@
+<div class="ngRxMargin">
+    <app-button (click)="increment()" [btnValue]="'Increment'"></app-button>
+
+    <div class="counter">Current Count: {{ count$ | async }}</div>
+    
+    <app-button (click)="decrement()" [btnValue]="'Decrement'"></app-button>
+    
+    <app-button (click)="reset()" [btnValue]="'Reset Counter'"></app-button>
+</div>

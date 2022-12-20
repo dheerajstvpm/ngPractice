@@ -1,0 +1,9 @@
+<div>
+    <label for="search-text">Search Text</label>
+    <input type="text" id="search-text" [(ngModel)]="searchText" placeholder="Enter text to search">
+</div>
+<ul>
+    <li class="list-group-item" *ngFor="let character of characters | filter: searchText">
+        {{character}}
+    </li>
+</ul>

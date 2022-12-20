@@ -1,0 +1,24 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "movie 1",
+      "source": "OTT"
+    },
+    {
+      "id": 2,
+      "title": "movie 2",
+      "source": "nearby Theatres"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "demo"
+  }
+}

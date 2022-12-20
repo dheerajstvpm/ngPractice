@@ -1,0 +1,17 @@
+<h1>Add new movie</h1>
+<form (ngSubmit)="onSubmit()">
+    <table>
+        <tr>
+            <td><label for="title">Movie title</label></td>
+            <td><input type="text" name="title" [(ngModel)]="title" id="title"></td>
+        </tr>
+        <tr>
+            <td><label for="source">Movie source</label></td>
+            <td> <select name="source" [(ngModel)]="source" id="source">
+                    <option value="OTT">OTT</option>
+                    <option value="nearby Theatres">nearby Theatres</option>
+                </select></td>
+        </tr>
+    </table>
+    <app-button [btnValue]="'Add a movie'"></app-button>
+</form>
